@@ -10,7 +10,7 @@ Ext.define('tleaf.view.Main', {
 
         items: [
             {
-                title: 'Welcome',
+                title: 'Home',
                 iconCls: 'home',
 
                 styleHtmlContent: true,
@@ -19,7 +19,7 @@ Ext.define('tleaf.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 'Welcome to t.leaf'
                 },
 
                 html: [
@@ -29,7 +29,7 @@ Ext.define('tleaf.view.Main', {
                 ].join("")
             },
             {
-                title: 'Get Started',
+                title: 'Teas',
                 iconCls: 'action',
 
                 items: [
@@ -44,6 +44,15 @@ Ext.define('tleaf.view.Main', {
                         posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
                     }
                 ]
+            },
+            {
+                title: 'Blender',
+                iconCls: 'action'
+            },
+            {
+                title: 'Info',
+                iconCls: 'action'
+
             }
         ]
     }
