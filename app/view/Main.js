@@ -10,7 +10,7 @@ Ext.define('tleaf.view.Main', {
 
         items: [
             {
-                title: 'Welcome',
+                title: 'Home',
                 iconCls: 'home',
 
                 styleHtmlContent: true,
@@ -19,13 +19,11 @@ Ext.define('tleaf.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 't.leaf'
                 },
 
                 html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
+                    "Welcome to t.leaf"
                 ].join("")
             },
             {
