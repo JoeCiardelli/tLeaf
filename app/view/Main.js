@@ -1,60 +1,80 @@
 Ext.define('tleaf.view.Main', {
 	extend: 'Ext.tab.Panel',
-	    xtype: 'main',
-	    requires: [
-		       'Ext.TitleBar',
+	xtype: 'main',
+	requires: [
+		'Ext.TitleBar',
         'Ext.Video'
-		       ],
-	    config: {
+	],
+	config: {
+       /* tabBarPosition: 'top',
+        items: [ 
+            {
+                title: 'T.LEAF'     
+            }
+        ]
+        */
 	    tabBarPosition: 'bottom',
-
-		items: [
+        items: [
 			{
 			    title: 'Home',
 				iconCls: 'home',
-
 				styleHtmlContent: true,
 				scrollable: true,
 
 				items: {
-				docked: 'top',
+				    docked: 'top',
 				    xtype: 'titlebar',
-
-				    title: 'Welcome to t.leaf'
-
-
-				    },
+				    title: 'T.LEAF'
+			    },
 
 				html: [
-                    "Welcome to t.leaf"
+                        '<h3 style="text-align:center">Welcome to t.leaf</h3>',
+                        "<p>t.leaf is the premier database for tea drinkers.",
+                        "This site is designed to give you information about",
+                        "your favorite teas, provide flavor profiles and, ",
+                        " and even provides a unique blend",
+                        "feature which allows you to mix and match to create",
+                        "your own custom teas!"
 				       ].join("")
-				},
-			{
+			},
+            {
 			    title: 'Teas',
 				iconCls: 'action',
 
-				items: [
-					{
-					    docked: 'top',
-						xtype: 'titlebar',
-						title: 'Getting Started'
-						},
-					{
+                items: [
+                    {
+                    docked: 'top',
+                    xtype: 'titlebar',
+                    title: 'T.LEAF'
+                    },
+					/*{
 					    xtype: 'video',
-						url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-						posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
-						}
+						url: '',
+						posterUrl: ''
+					}*/
                 ]
-				},
+			},
 			{
 			    title: 'Blender',
-				iconCls: 'action'
-				},
+				iconCls: 'action',
+
+                items: {
+                    docked: 'top',
+                    xtype: 'titlebar',
+                    title: 'T.LEAF'
+                },
+
+			},
 			{
 			    title: 'Info',
-				iconCls: 'action'
+				iconCls: 'action',
 
-				}
+                items: {
+                    docked: 'top',
+                    xtype: 'titlebar',
+                    title: 'T.LEAF'
+                }, 
+			}
         ]
 		}
     });
